@@ -1,0 +1,100 @@
+/* Body layout fix */
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f2f6ff;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+nav {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    margin: 20px;
+    padding:10px;
+    text-decoration: none;
+}
+
+/* Filter */
+.filter {
+    text-align: center;
+    margin: 20px;
+}
+
+.filter select {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+.filter select:hover {
+    border-color: blue;
+}
+
+
+/* Product container */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+/* Product card */
+.card {
+    background: white;
+    margin: 15px;
+    width: 30%;   /* 👈 important change */
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    border-radius: 18px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+/* Image */
+.card img {
+    width: 100%;
+}
+
+/* Button */
+button {
+    padding: 8px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/* Footer fixed bottom */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}

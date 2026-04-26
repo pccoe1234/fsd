@@ -1,0 +1,22 @@
+body{
+    text-align:center;
+}
+
+table{
+    width:80%;
+    margin:auto;
+    border-collapse:collapse;
+}
+
+th,td{
+    border:1px solid black;
+    padding:10px;
+}
+
+th{
+    background:lightblue;
+}
+
+tr:hover{
+    background:lightcoral;
+}

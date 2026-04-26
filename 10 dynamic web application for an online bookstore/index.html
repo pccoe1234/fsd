@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bookstore</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<header>
+  <h1> BookStore</h1>
+  <div class="filters">
+    <button onclick="filterBooks('all')">All</button>
+    <button onclick="filterBooks('fiction')">Fiction</button>
+    <button onclick="filterBooks('nonfiction')">Non-Fiction</button>
+    <button onclick="filterBooks('academic')">Academic</button>
+  </div>
+</header>
+
+<!-- Main -->
+<div class="container">
+
+  <!-- Books -->
+  <div class="books" id="book-list"></div>
+
+  <!-- Cart -->
+  <div class="cart">
+    <h3> Cart</h3>
+    <ul id="cart-items"></ul>
+    <h4>Total: ₹<span id="total">0</span></h4>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

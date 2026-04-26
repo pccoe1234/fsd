@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Booking</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2 class="title">Movie Booking System</h2>
+
+<!-- Movies -->
+<div class="movies" id="movies"></div>
+
+<hr>
+
+<!-- Seat Selection -->
+<h3>Select Seats</h3>
+<div class="seat-container" id="seats"></div>
+
+<hr>
+
+<!-- Summary -->
+<h3>Booking Summary</h3>
+<p>Selected Seats: <span id="selectedSeats">None</span></p>
+<p>Total Price: Rs <span id="total">0</span></p>
+
+<button onclick="book()">Book Now</button>
+
+<script src="script.js"></script>
+</body>
+</html>

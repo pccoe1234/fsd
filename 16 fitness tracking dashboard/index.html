@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fitness Tracking Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Fitness Tracking Dashboard</h1>
+</header>
+
+<div class="container">
+
+    <!-- Week Selection -->
+    <div class="filter-box">
+        <label>Select Week:</label>
+
+        <select id="weekSelect">
+            <option value="0">Week 1</option>
+            <option value="1">Week 2</option>
+            <option value="2">Week 3</option>
+        </select>
+    </div>
+
+    <!-- Line Chart -->
+    <div class="card">
+        <h2>Daily Steps Burned</h2>
+        <div id="lineChart" class="chart"></div>
+    </div>
+
+    <!-- Pie Chart -->
+    <div class="card">
+        <h2>Activity Distribution</h2>
+        <div id="pieChart" class="pie-container"></div>
+    </div>
+
+    <!-- Bar Chart -->
+    <div class="card">
+        <h2>Weekly Comparison</h2>
+        <div id="barChart" class="chart"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

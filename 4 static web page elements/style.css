@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f6ff;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Page title */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+p {
+    text-align: center;
+    color: #555;
+}
+
+/* Form box */
+form {
+    width: 60%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Fieldset styling */
+fieldset {
+    border: 2px solid #3498db;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* Legend */
+legend {
+    font-weight: bold;
+    color: #3498db;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #27ae60;
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: #e74c3c;
+    color: white;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    opacity: 0.8;
+}

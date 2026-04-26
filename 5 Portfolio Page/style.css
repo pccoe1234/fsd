@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: lightskyblue;
+    color: gray;
+}
+
+nav {
+    background: blue;
+    padding: 18px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    color: lightblue;
+    text-decoration: underline;
+}
+
+
+section {
+    width: 75%;
+    margin: 30px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(15, 12, 95, 0.2);
+    text-align: center;
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+
+h1 {
+    font-size: 40px;
+    color: darkblue;
+}
+
+h2 {
+    color: black;
+}
+
+/* Paragraphs */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: gray;
+}
+
+/* Skills */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    background: blue;
+    color: white;
+    padding: 12px 32px;
+    margin: 15px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+
+
+

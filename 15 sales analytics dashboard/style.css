@@ -1,0 +1,104 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background:#f4f4f4;
+}
+
+header{
+    background:darkblue;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.container{
+    padding:20px;
+}
+
+.filter-box{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+select{
+    padding:8px;
+    width:200px;
+}
+
+/* Cards */
+.card{
+    background:white;
+    width:85%;
+    margin:20px auto;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0px 4px 8px gray;
+}
+
+.card h2{
+    text-align:center;
+}
+
+/* Charts */
+.chart{
+    height:250px;
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    gap:15px;
+}
+
+/* Line chart bars */
+.line-bar{
+    width:45px;
+    background:green;
+    color:white;
+    text-align:center;
+}
+
+/* Bar chart */
+.bar{
+    width:50px;
+    background:blue;
+    color:white;
+    text-align:center;
+}
+
+/* Pie chart */
+.pie-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.pie{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+}
+
+/* Legend */
+.legend p{
+    margin:10px 0;
+}
+
+.electronics{
+    background:red;
+}
+
+.clothing{
+    background:orange;
+}
+
+.grocery{
+    background:green;
+}
+
+.box{
+    width:20px;
+    height:20px;
+    display:inline-block;
+    margin-right:10px;
+}

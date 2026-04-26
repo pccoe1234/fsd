@@ -1,0 +1,126 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background-color:#f4f4f4;
+}
+
+/* Header */
+header{
+    background-color:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:24px;
+}
+
+/* Container */
+.container{
+    padding:20px;
+}
+
+/* Dropdown */
+.dropdown-box{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+select{
+    padding:8px;
+    width:200px;
+}
+
+/* Cards */
+.card{
+    background-color:white;
+    width:85%;
+    margin:20px auto;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0px 4px 10px gray;
+}
+
+.card h2{
+    text-align:center;
+}
+
+/* Bar + Line Chart */
+.chart{
+    height:250px;
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    gap:15px;
+}
+
+/* Bar Chart */
+.bar{
+    width:50px;
+    background-color:blue;
+    color:white;
+    text-align:center;
+    border-radius:5px 5px 0 0;
+}
+
+/* Line Chart */
+.line-bar{
+    width:45px;
+    background-color:green;
+    color:white;
+    text-align:center;
+    border-radius:5px 5px 0 0;
+}
+
+/* Pie Chart */
+.pie-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.pie{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+}
+
+/* Legend */
+.legend p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+.green-box,
+.orange-box,
+.red-box{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    margin-right:10px;
+}
+
+.green-box{
+    background:green;
+}
+
+.orange-box{
+    background:orange;
+}
+
+.red-box{
+    background:red;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .card{
+        width:95%;
+    }
+
+    .bar,
+    .line-bar{
+        width:35px;
+        font-size:12px;
+    }
+}

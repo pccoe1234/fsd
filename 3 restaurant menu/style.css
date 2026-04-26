@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    background-color: #d35400;
+    color: white;
+    padding: 20px;
+}
+
+.header p {
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Menu container */
+.menu {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Section headings */
+h2 {
+    color: #d35400;
+    border-bottom: 2px solid #d35400;
+    padding-bottom: 5px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Special dishes highlight */
+.special {
+    background-color: #27ae60;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-weight: bold;
+}

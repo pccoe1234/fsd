@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: lightgray;
+}
+
+header {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px gray;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin: 10px 0;
+}
+
+/* Chart */
+.chart {
+    height: 250px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Bars */
+.bar {
+    width: 50px;
+    color: white;
+    text-align: center;
+}
+
+.temp-bar {
+    background-color: red;
+}
+
+.humidity-bar {
+    background-color: blue;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+}
+
+/* Mobile */
+@media(max-width:768px){
+    .dashboard{
+        grid-template-columns: 1fr;
+    }
+}

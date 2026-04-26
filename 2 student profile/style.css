@@ -1,0 +1,57 @@
+body {
+    font-family: Arial;
+    background: #dff2ff;
+    text-align: center;
+}
+
+.card {
+    width: 60%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid blue;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+th {
+    background: blue;
+    color: white;
+}
+
+ul {
+    text-align: left;
+    display: inline-block;
+}
+
+a {
+    color: blue;
+}
+
+li{
+    display:inline-block;
+    background:blue;
+    color:white;
+    padding:12px 32px;
+    margin:15px;
+    border-radius:25px;
+    font-weight:bold;
+}

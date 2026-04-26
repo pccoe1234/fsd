@@ -1,0 +1,20 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { background-color: #f4f7f6; color: #2c3e50; }
+.app-container { max-width: 800px; margin: 0 auto; padding: 20px; }
+.header { text-align: center; padding: 40px; background-color: #2980b9; color: white; border-radius: 8px; margin-bottom: 30px; }
+.header h1 { font-size: 2.2rem; margin-bottom: 5px; }
+.main-content { display: flex; flex-direction: column; gap: 30px; }
+.form-section, .list-section { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+h2 { margin-bottom: 20px; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; color: #2980b9; }
+.feedback-form { display: flex; flex-direction: column; gap: 15px; }
+.feedback-form input, .feedback-form textarea { padding: 12px; border: 1px solid #bdc3c7; border-radius: 4px; font-size: 1rem; }
+.feedback-form textarea { min-height: 100px; resize: vertical; }
+.feedback-form button { padding: 12px; background-color: #27ae60; color: white; border: none; border-radius: 4px; font-size: 1.1rem; cursor: pointer; transition: 0.3s; }
+.feedback-form button:hover { background-color: #2ecc71; }
+.feedback-grid { display: flex; flex-direction: column; gap: 15px; }
+.feedback-card { padding: 15px; border-left: 4px solid #2980b9; background-color: #ecf0f1; border-radius: 4px; }
+.fb-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.fb-header h3 { font-size: 1.1rem; color: #34495e; }
+.fb-name { font-weight: bold; color: #7f8c8d; }
+.fb-text { font-style: italic; margin-bottom: 10px; line-height: 1.5; }
+.fb-date { color: #95a5a6; font-size: 0.8rem; }

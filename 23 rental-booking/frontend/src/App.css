@@ -1,0 +1,22 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; }
+body { background-color: #e8f5e9; color: #2e7d32; }
+.app-container { max-width: 900px; margin: 0 auto; padding: 20px; }
+.header { text-align: center; padding: 40px; background-color: #43a047; color: white; border-radius: 8px; margin-bottom: 30px; }
+.header h1 { font-size: 2.5rem; margin-bottom: 5px; }
+.main-content { display: flex; flex-direction: column; gap: 30px; }
+.form-section, .list-section { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+h2 { color: #2e7d32; margin-bottom: 20px; border-bottom: 2px solid #c8e6c9; padding-bottom: 10px; }
+.rental-form { display: flex; flex-direction: column; gap: 15px; }
+.rental-form input, .rental-form select { padding: 12px; border: 1px solid #a5d6a7; border-radius: 4px; font-size: 1rem; color: #1b5e20; background-color: #f1f8e9; }
+.form-row { display: flex; gap: 15px; }
+.form-row input { flex: 1; }
+.rental-form button { padding: 15px; background-color: #43a047; color: white; border: none; border-radius: 4px; font-size: 1.1rem; cursor: pointer; transition: 0.3s; font-weight: bold; }
+.rental-form button:hover { background-color: #2e7d32; }
+.rentals-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+.rental-card { border: 1px solid #c8e6c9; border-radius: 8px; overflow: hidden; background: white; }
+.card-header { background-color: #43a047; color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center; }
+.card-header h3 { font-size: 1.2rem; }
+.duration { background: white; color: #43a047; padding: 4px 8px; border-radius: 12px; font-size: 0.85rem; font-weight: bold; }
+.card-body { padding: 15px; }
+.card-body p { margin-bottom: 8px; color: #333; }
+.booking-date { color: #888; font-size: 0.85rem; margin-top: 15px; border-top: 1px solid #eee; padding-top: 10px; }

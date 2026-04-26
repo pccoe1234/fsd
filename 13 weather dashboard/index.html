@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Weather Dashboard</h1>
+</header>
+
+<div class="dashboard">
+
+    <div class="card">
+        <h2>Current Weather</h2>
+        <p>City: Pune</p>
+        <p>Temperature: 32°C</p>
+        <p>Humidity: 65%</p>
+        <p>Condition: Sunny</p>
+    </div>
+
+    <div class="card">
+        <h2>Temperature Chart</h2>
+        <div id="tempChart" class="chart"></div>
+    </div>
+
+    <div class="card">
+        <h2>Humidity Chart</h2>
+        <div id="humidityChart" class="chart"></div>
+    </div>
+
+    <div class="card">
+        <h2>Weekly Forecast</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Temperature</th>
+                <th>Humidity</th>
+            </tr>
+            <tr>
+                <td>Mon</td>
+                <td>30°C</td>
+                <td>60%</td>
+            </tr>
+            <tr>
+                <td>Tue</td>
+                <td>32°C</td>
+                <td>65%</td>
+            </tr>
+            <tr>
+                <td>Wed</td>
+                <td>29°C</td>
+                <td>55%</td>
+            </tr>
+            <tr>
+                <td>Thu</td>
+                <td>31°C</td>
+                <td>70%</td>
+            </tr>
+            <tr>
+                <td>Fri</td>
+                <td>33°C</td>
+                <td>75%</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

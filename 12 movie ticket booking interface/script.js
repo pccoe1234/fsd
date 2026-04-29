@@ -7,31 +7,32 @@ const movies = [
 let selectedMovie = null;
 let selectedSeats = [];
 
-// Display Movies
 function displayMovies() {
   const movieDiv = document.getElementById("movies");
   movieDiv.innerHTML = "";
 
   movies.forEach(movie => {
     movieDiv.innerHTML += `
-      <div class="card">
-        <img src="${movie.img}">
-        <h4>${movie.name}</h4>
-        <p>Price: Rs ${movie.price}</p>
-        <button onclick="selectMovie(${movie.id})">Select</button>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <img src="${movie.img}" class="card-img-top" alt="${movie.name}">
+          <div class="card-body text-center">
+            <h4 class="card-title">${movie.name}</h4>
+            <p class="card-text">Price: Rs ${movie.price}</p>
+            <button class="btn btn-primary" onclick="selectMovie(${movie.id})">Select</button>
+          </div>
+        </div>
       </div>
     `;
   });
 }
 
-// Select Movie
 function selectMovie(id) {
   selectedMovie = movies.find(m => m.id === id);
   alert("Movie Selected");
   createSeats();
 }
 
-// Create Seats
 function createSeats() {
   const seatDiv = document.getElementById("seats");
   seatDiv.innerHTML = "";
@@ -42,7 +43,6 @@ function createSeats() {
   }
 }
 
-// Select Seat
 function selectSeat(num, element) {
   if (!selectedMovie) {
     alert("Select a movie first");
@@ -60,7 +60,6 @@ function selectSeat(num, element) {
   updateSummary();
 }
 
-// Update Summary
 function updateSummary() {
   document.getElementById("selectedSeats").innerText =
     selectedSeats.length ? selectedSeats.join(", ") : "None";
@@ -69,7 +68,6 @@ function updateSummary() {
   document.getElementById("total").innerText = total;
 }
 
-// Booking
 function book() {
   if (!selectedMovie || selectedSeats.length === 0) {
     alert("Select movie and seats");
@@ -83,5 +81,4 @@ function book() {
   updateSummary();
 }
 
-// Load movies
 displayMovies();

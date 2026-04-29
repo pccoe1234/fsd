@@ -13,11 +13,15 @@ function displayBooks(bookArray) {
 
   bookArray.forEach(book => {
     bookList.innerHTML += `
-      <div class="card">
-        <img src="${book.img}">
-        <h4>${book.title}</h4>
-        <p>₹${book.price}</p>
-        <button onclick="addToCart(${book.id})">Add to Cart</button>
+      <div class="col-md-6">
+        <div class="card">
+          <img src="${book.img}" class="card-img-top" alt="${book.title}">
+          <div class="card-body text-center">
+            <h4 class="card-title">${book.title}</h4>
+            <p class="card-text">₹${book.price}</p>
+            <button class="btn btn-primary" onclick="addToCart(${book.id})">Add to Cart</button>
+          </div>
+        </div>
       </div>
     `;
   });
@@ -52,17 +56,15 @@ function updateCart() {
 
   totalEl.innerText = total;
 
-  //  Checkout Button
   if (cart.length > 0) {
     cartItems.innerHTML += `
-      <button onclick="checkout()" style="margin-top:10px; padding:5px 10px;">
+      <button class="btn btn-success mt-3" onclick="checkout()">
         Checkout
       </button>
     `;
   }
 }
 
-// ✅ Checkout Function
 function checkout() {
   alert("Order Successful!");
 
@@ -70,5 +72,4 @@ function checkout() {
   updateCart();
 }
 
-// Load books initially
 displayBooks(books);

@@ -8,16 +8,10 @@ header{
     background:darkblue;
     color:white;
     text-align:center;
-    padding:20px;
-}
-
-.container{
-    padding:20px;
 }
 
 .filter-box{
-    text-align:center;
-    margin-bottom:20px;
+    border-radius:10px;
 }
 
 select{
@@ -25,21 +19,20 @@ select{
     width:200px;
 }
 
-/* Cards */
-.card{
+.dashboard-card{
     background:white;
     width:85%;
     margin:20px auto;
     padding:20px;
     border-radius:10px;
     box-shadow:0px 4px 8px gray;
+    border:none;
 }
 
-.card h2{
+.dashboard-card h2{
     text-align:center;
 }
 
-/* Charts */
 .chart{
     height:250px;
     display:flex;
@@ -48,7 +41,6 @@ select{
     gap:15px;
 }
 
-/* Line chart bars */
 .line-bar{
     width:45px;
     background:green;
@@ -56,7 +48,6 @@ select{
     text-align:center;
 }
 
-/* Bar chart */
 .bar{
     width:50px;
     background:blue;
@@ -64,7 +55,6 @@ select{
     text-align:center;
 }
 
-/* Pie chart */
 .pie-container{
     display:flex;
     justify-content:center;
@@ -79,7 +69,6 @@ select{
     border-radius:50%;
 }
 
-/* Legend */
 .legend p{
     margin:10px 0;
 }
@@ -101,4 +90,16 @@ select{
     height:20px;
     display:inline-block;
     margin-right:10px;
+}
+
+@media(max-width:768px){
+    .dashboard-card{
+        width:95%;
+    }
+
+    .bar,
+    .line-bar{
+        width:35px;
+        font-size:12px;
+    }
 }
